@@ -1,0 +1,113 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+logup/
+{
+	"idNum":"",
+	"psw":"",
+	"publicKey":"",
+	"email":""
+}
+
+{
+	"code": "1"  //1 success 0 fail
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+login/
+{
+	"idNum":"",
+	"psw":""
+}
+
+{
+	"code": "1"  //1 success 0 fail
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+updateContract/
+{
+	"content":"",
+	"private_key":"",
+	"idNum":"",
+	"relativeIdNums":[
+		{
+			"idNum"
+		}, 
+		{
+			"idNum"
+		}
+	]
+}
+
+{
+	"code":"1", // or 0
+	"contractHash":""
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+deathCertification/
+{
+	"idNum":"",
+	"institution":""
+}
+{
+	"code":"1" // 0, if no relative contract
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+relativeContracts/
+{
+	"idNum":""
+}
+
+{
+	"contracts":[
+		{
+			"contractHash":"",
+			"contentHash":"",
+			"encroptedContent":"",
+			"ownerSig":"",
+			"ownerPublicKey":"",
+			"idNums":[
+				{
+					"idNum":""
+				},
+				{
+					"idNum":""
+				}
+			]
+		},
+		{
+			"contractHash":"",
+			"contentHash":"",
+			"encroptedContent":"",
+			"ownerSig":"",
+			"ownerPublicKey":"",
+			"idNums":[
+				{
+					"idNum":""
+				},
+				{
+					"idNum":""
+				}
+			]
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

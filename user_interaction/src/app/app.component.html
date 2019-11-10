@@ -1,0 +1,66 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar"
+            nzCollapsible
+            nzWidth="256px"
+            nzBreakpoint="md"
+            [nzCollapsed]="isCollapsed"
+            [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <a  (click)="isCollapsed = !isCollapsed">
+        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+      </a>
+      <a (click)="home()">
+        <h1>See You Again</h1>
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-submenu nzOpen nzTitle="USERS" nzIcon="dashboard" *ngIf="idNum==null">
+        <ul>
+          <li nz-menu-item nzMatchRouter *ngIf="false">
+            <a routerLink="/login">LOG IN</a>
+          </li>
+          <li *ngIf="idNum==null" nz-menu-item nzMatchRouter>
+            <a routerLink="/logup">LOG UP</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="TESTAMENT" nzIcon="form" *ngIf="idNum!=null">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a [routerLink]="['/update']" [queryParams]="{idNum: this.idNum}">UPDATE CONTRACT</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a [routerLink]="['/list']" [queryParams]="{idNum: this.idNum}">CONTRACT LIST</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/certification">DEATH CERTIFICATION</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header" style="padding-left: 24px; font-size: large; font-weight: 700;">
+<!--        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">-->
+<!--            <i class="trigger"-->
+<!--               nz-icon-->
+<!--               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"-->
+<!--            ></i>-->
+<!--        </span>-->
+        <div *ngIf = "idNum!=null" >{{this.idNum}}</div>
+<!--        <div style="float: right">-->
+<!--        <button *ngIf = "idNum!=null" nz-button nzType="primary" nzShape="round" (click)="exit()" >-->
+<!--&lt;!&ndash;          <button nz-button nzType="primary" nzShape="round" (click)="exit()">&ndash;&gt;-->
+<!--          <i nz-icon nzType="download"></i>-->
+<!--        </button>-->
+<!--        </div>-->
+      </div>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

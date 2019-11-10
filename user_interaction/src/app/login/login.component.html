@@ -1,0 +1,29 @@
+<h1>Log In</h1>
+<div style="margin: 0px 0px 40px 0px; height: 1px; border-top: 1px solid #cccccc;"></div>
+<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="login()">
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input your ID number!">
+      <nz-input-group nzPrefixIcon="user">
+        <input type="text" nz-input formControlName="idNum" placeholder="ID Number" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input your Password!">
+      <nz-input-group nzPrefixIcon="lock">
+        <input type="password" nz-input formControlName="psw" placeholder="Password" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control>
+      <label nz-checkbox formControlName="remember">
+        <span>Remember me</span>
+      </label>
+      <a class="login-form-forgot" class="login-form-forgot">Forgot password</a>
+      <button nz-button class="login-form-button" [nzType]="'primary'">Log in</button>
+      Or
+      <a routerLink="/logup">register now!</a>
+    </nz-form-control>
+  </nz-form-item>
+</form>

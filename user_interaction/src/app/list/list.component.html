@@ -1,0 +1,20 @@
+<h1>CONTRACT LIST</h1>
+<div style="margin: 0px 0px 40px 0px; height: 1px; border-top: 1px solid #cccccc;"></div>
+<nz-collapse style="width: 95%;
+    margin-bottom: 100px;">
+  <nz-collapse-panel
+    *ngFor="let panel of contracts"
+    [nzHeader]=" 'CONTRACT HASH: ' + panel.contractHash"
+    [nzActive]="false"
+    [nzDisabled]="false"
+  >
+    <div style="word-wrap: break-word;word-break: break-all;overflow: hidden;">
+      <div style="margin:1px;"> <b>CONTENT HASH:</b> {{panel.contentHash}}}</div>
+      <div style="margin:1px;"> <b>ENCROPTED CONTENT:</b> {{panel.encroptedContent}}</div>
+      <div style="margin:1px;"> <b>OWNER SIGNATURE:</b> {{panel.ownerSig}}</div>
+      <div style="margin:1px;"> <b>OWNER PUBLIC KEY:</b> {{panel.ownerPublicKey}}</div>
+      <b>RELATIVE ID NUMBERS:</b>
+      <div style="margin:0;" *ngFor="let relativeIdNum of panel.idNums">{{relativeIdNum}}</div>
+    </div>
+  </nz-collapse-panel>
+</nz-collapse>

@@ -1,0 +1,28 @@
+<h1>DEATH CERTIFICATION</h1>
+<div style="margin: 0px 0px 40px 0px; height: 1px; border-top: 1px solid #cccccc;"></div>
+
+<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="certificate()">
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input name of institution!">
+      <nz-input-group nzPrefixIcon="user">
+        <input type="text" nz-input formControlName="institution" placeholder="name of institution" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+
+
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input ID number!">
+      <nz-input-group nzPrefixIcon="lock">
+        <input type="text" nz-input formControlName="idNum" placeholder="ID Number" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+
+
+  <nz-form-item>
+    <nz-form-control>
+      <button nz-button class="login-form-button" [nzType]="'primary'">Submit</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>

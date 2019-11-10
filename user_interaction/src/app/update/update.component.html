@@ -1,0 +1,58 @@
+<h1>UPDATE CONTRACT</h1>
+<div style="margin: 0px 0px 40px 0px; height: 1px; border-top: 1px solid #cccccc;"></div>
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24"  nzRequired>Secret Key</nz-form-label>
+    <nz-form-control [nzSm]="18" [nzXs]="18" nzErrorTip="Please input secret key!">
+      <input nz-input formControlName="secretKey" placeholder="SK" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzXs]="24" [nzSm]="6">
+      Testament
+    </nz-form-label>
+
+    <nz-form-control [nzXs]="18" [nzSm]="18" nzErrorTip="Please write something here!">
+      <textarea formControlName="comment" nz-input rows="2" placeholder="write any thing"></textarea>
+    </nz-form-control>
+
+  </nz-form-item>
+  <nz-form-item *ngFor="let control of listOfControl; let i = index">
+    <nz-form-label [nzXs]="24" [nzSm]="6" *ngIf="i == 0" [nzFor]="control.controlInstance">
+      Relative ID numbers
+    </nz-form-label>
+
+    <nz-form-control
+      [nzXs]="20"
+      [nzSm]="16"
+      [nzOffset]="i == 0 ? 0 : 6"
+      nzErrorTip="Please input passenger's name or delete this field."
+    >
+    <input
+      class="passenger-input"
+      nz-input
+      placeholder="ID number"
+      [attr.id]="control.id"
+      [formControlName]="control.controlInstance"/>
+      <i nz-icon nzType="minus-circle-o" class="dynamic-delete-button" (click)="removeField(control, $event)"></i>
+    </nz-form-control>
+
+  </nz-form-item>
+
+
+  <nz-form-item>
+    <nz-form-control [nzXs]="{ span: 24, offset: 0 }" [nzSm]="{ span: 16, offset: 6 }">
+      <button nz-button nzType="dashed" class="add-button" (click)="addField($event)">
+        <i nz-icon nzType="plus"></i>
+        Add field
+      </button>
+    </nz-form-control>
+  </nz-form-item>
+
+
+  <nz-form-item>
+    <nz-form-control [nzXs]="{ span: 24, offset: 0 }" [nzSm]="{ span: 20, offset: 6 }">
+      <button nz-button nzType="primary">Submit</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
