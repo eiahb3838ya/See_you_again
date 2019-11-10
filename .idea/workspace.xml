@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a31e64a-3785-4433-a633-d31ae36ef083" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Django/see_you_again/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django/see_you_again/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/see_you_again/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django/see_you_again/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/testt/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$README.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~WRL1252.tmp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +30,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Django/see_you_again/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="401">
               <caret line="185" column="19" lean-forward="true" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Django/userAccount/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="52" column="18" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Django/contractAccount/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="119" column="23" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="666" />
     <option name="height" value="774" />
   </component>
@@ -95,7 +112,19 @@
               <item name="see_you_again" type="b2602c69:ProjectViewProjectNode" />
               <item name="see_you_again" type="462c0819:PsiDirectoryNode" />
               <item name="Django" type="462c0819:PsiDirectoryNode" />
+              <item name="contractAccount" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="see_you_again" type="b2602c69:ProjectViewProjectNode" />
               <item name="see_you_again" type="462c0819:PsiDirectoryNode" />
+              <item name="Django" type="462c0819:PsiDirectoryNode" />
+              <item name="see_you_again" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="see_you_again" type="b2602c69:ProjectViewProjectNode" />
+              <item name="see_you_again" type="462c0819:PsiDirectoryNode" />
+              <item name="Django" type="462c0819:PsiDirectoryNode" />
+              <item name="userAccount" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="see_you_again" type="b2602c69:ProjectViewProjectNode" />
@@ -106,6 +135,9 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,8 +200,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Django/see_you_again/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="401">
           <caret line="185" column="19" lean-forward="true" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django/userAccount/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django/contractAccount/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="119" column="23" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
