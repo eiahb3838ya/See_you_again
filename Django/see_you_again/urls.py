@@ -19,12 +19,20 @@ from django.contrib import admin
 
 from django.urls import include, path
 from rest_framework import routers
-from testt import views
+# from testt import views
+from django.conf.urls import url
+from rest_framework_swagger.views import get_swagger_view
 
 
-router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
+schema_view = get_swagger_view(title='Pastebin API')
+
+urlpatterns = [
+    url(r'^$', schema_view)
+]
+
+# router = routers.DefaultRouter()
+# router.register(r'users', views.UserViewSet)
+# router.register(r'groups', views.GroupViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
@@ -32,12 +40,12 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('', include(router.urls)),
+    # path('', include(router.urls)),
 
-    path('test/', include('testt.urls')),
+    # path('test/', include('testt.urls')),
     path('userAccount/', include('userAccount.urls')),
     path('contractAccount/', include('contractAccount.urls')),
-
+    url(r'^$', schema_view)
 
 ]
 

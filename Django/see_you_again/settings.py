@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'userAccount',
     'contractAccount',
-
+    'rest_framework_swagger',
 
 ]
 
@@ -182,3 +182,5 @@ CORS_ALLOW_METHODS = (
 #     'x-requested-with',
 #     'Pragma',
 # )
+
+REST_FRAMEWORK = { 'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema' }
